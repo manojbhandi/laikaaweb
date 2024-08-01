@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+footer{
+  background-color: #393737;
+  padding: 55px 10px;
+}
+.footer-text-title{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.footer-list li{
+  margin-bottom: 10px;
+}
+
+.csr svg{
+  font-size: 50px;
+}
+@media (max-width:767px){
+  .csr svg{
+    font-size: 30px;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper{
+  max-width: 95%;
+  width: 500px;
+}
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper{
+  max-width: 90%;
+  width: 500px;
+}
+
+.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input:focus{
+  box-shadow: none !important;
+}
+
+a.active {
+  background-color: rgb(231 231 231);
+  border-radius: 10px;
+}
