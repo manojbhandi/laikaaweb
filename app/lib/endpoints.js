@@ -1,4 +1,4 @@
-export const baseUrl = " https://laikaa.in/api/";
+export const baseUrl = "https://api.laikaa.in/";
 export const apiVersion = "v1";
 export const getHomeData = `home/${apiVersion}`;
 export const getAllCategroreis = `product-category/lists/${apiVersion}`;
