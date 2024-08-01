@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "https://laikaa.in/api/";
+export const baseUrl = "https://api.laikaa.in/";
 /**
  * @param {string} url
  * @param {Object|FormData|string} data
